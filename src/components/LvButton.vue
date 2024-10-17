@@ -19,6 +19,7 @@ defineProps({
 button {
   padding: 7px 15px;
   width: 150px;
+  font-size: 18px;
   color: #fefefe;
   background-color: #000;
   border: 1px solid transparent;
