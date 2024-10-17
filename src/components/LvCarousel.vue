@@ -66,7 +66,7 @@ onMounted(async () => {
         <router-link :to="/details-new/ + noticia.idNoticia">
           <img
             :src="noticia.image"
-            class="img-carousel d-block m-auto"
+            class="img-carousel img-fluid d-block m-auto"
             :alt="noticia.titulo"
           />
           <div class="carousel-caption d-none d-md-block p-4">
@@ -102,7 +102,6 @@ onMounted(async () => {
 }
 
 .img-carousel {
-  height: 300px;
   border-radius: 15px;
   border: 0.1px solid transparent;
   transition: all ease-in-out 0.3s;
