@@ -18,7 +18,7 @@ const link = ref("https://www.linkedin.com/in/caioroberto-dev-web");
 <style scoped>
 footer {
   height: 200px;
-  background-color: #333;
+  background-color: #111;
   color: #fefefe;
 }
 
