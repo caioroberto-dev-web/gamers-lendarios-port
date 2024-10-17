@@ -5,7 +5,7 @@ const link = ref("https://www.linkedin.com/in/caioroberto-dev-web");
 </script>
 
 <template>
-  <footer class="text-center mt-3">
+  <footer class="text-center mt-3" role="contentinfo">
     <img class="my-3" src="/logo-footer.png" alt="gamers lendários" />
     <p>Gamers Lendários</p>
     <p>&copy; 2024 - todos os direitos reservados</p>
