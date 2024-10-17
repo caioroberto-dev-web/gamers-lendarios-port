@@ -1,0 +1,69 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+<<<<<<< HEAD
+=======
+  min-height: 1200px;
+>>>>>>> b0de3f006cf20cd169f1a1b7ad90c9aa71446f7b
+  min-width: 320px;
+}
+
+li {
+  list-style: none;
+}
+
+/* Formkit Message */
+
+.formkit-help {
+  text-align: end;
+}
+
+.formkit-messages {
+  padding: 0;
+}
+
+.formkit-message {
+  color: red;
+  text-align: center;
+  margin: 5px 0;
+}
+
+<<<<<<< HEAD
+iframe {
+  width: 576px;
+  height: 360px;
+  display: block;
+  margin: 0 auto;
+}
+=======
+/* Youtube video */
+>>>>>>> b0de3f006cf20cd169f1a1b7ad90c9aa71446f7b
+
+@media (max-width: 768px) {
+  iframe {
+    width: 480px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  iframe {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> b0de3f006cf20cd169f1a1b7ad90c9aa71446f7b
