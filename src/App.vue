@@ -18,7 +18,7 @@ const hideInputSearch = [
 </script>
 
 <template>
-  <div class="container-main">
+  <div class="container-main" role="main">
     <lv-nav-bar></lv-nav-bar>
     <div class="container container-fluid p-0">
       <lv-search
