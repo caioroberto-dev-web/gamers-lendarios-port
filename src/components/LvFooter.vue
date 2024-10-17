@@ -25,4 +25,8 @@ footer {
 img {
   height: 50px;
 }
+
+a {
+  color: #007bff;
+}
 </style>
