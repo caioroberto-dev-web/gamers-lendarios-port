@@ -15,7 +15,12 @@ const logout = () => {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+   <nav
+    class="navbar navbar-expand-lg bg-black"
+    data-bs-theme="dark"
+    role="navigation"
+    aria-label="Main navigation"
+  >
     <router-link class="navbar-brand" to="/"
       ><img class="img-logo" src="/logo.svg" alt="gamers lendários"
     /></router-link>
@@ -24,6 +29,9 @@ const logout = () => {
       type="button"
       data-bs-toggle="collapse"
       data-bs-target=".collapse"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+      tabindex="0"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,34 +57,38 @@ const logout = () => {
         <li class="nav-item">
           <router-link class="nav-link" to="/mob-news">Mobile</router-link>
         </li>
-        <span v-if="userStore.user.isLoggedIn == false">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/register">Registro</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/login">Login</router-link>
-          </li>
-        </span>
-        <span v-else>
-          <li class="nav-item">
-            <router-link
-              class="nav-link"
-              :to="/panel-user/ + userStore.user.idUsuario"
-            >
-              <img
-                class="img-profile"
-                :src="userStore.user.image"
-                :alt="userStore.user.nome"
-              />
-              {{ userStore.user.nome_de_usuario }}</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link logout" to="/login" @click="logout"
-              >Logout</router-link
-            >
-          </li>
-        </span>
+        <div>
+          <span v-if="userStore.user.isLoggedIn == false">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/register"
+                >Registro</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/login">Login</router-link>
+            </li>
+          </span>
+          <span v-else>
+            <li class="nav-item">
+              <router-link
+                class="nav-link"
+                :to="/panel-user/ + userStore.user.idUsuario"
+              >
+                <img
+                  class="img-profile"
+                  :src="userStore.user.image"
+                  :alt="userStore.user.nome"
+                />
+                {{ userStore.user.nome_de_usuario }}</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link logout" to="/login" @click="logout"
+                >Logout</router-link
+              >
+            </li>
+          </span>
+        </div>
       </ul>
     </div>
   </nav>
