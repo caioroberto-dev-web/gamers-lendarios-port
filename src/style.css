@@ -5,10 +5,6 @@
 }
 
 body {
-<<<<<<< HEAD
-=======
-  min-height: 1200px;
->>>>>>> b0de3f006cf20cd169f1a1b7ad90c9aa71446f7b
   min-width: 320px;
 }
 
@@ -32,16 +28,12 @@ li {
   margin: 5px 0;
 }
 
-<<<<<<< HEAD
 iframe {
   width: 576px;
   height: 360px;
   display: block;
   margin: 0 auto;
 }
-=======
-/* Youtube video */
->>>>>>> b0de3f006cf20cd169f1a1b7ad90c9aa71446f7b
 
 @media (max-width: 768px) {
   iframe {
@@ -63,7 +55,3 @@ iframe {
     height: 200px;
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> b0de3f006cf20cd169f1a1b7ad90c9aa71446f7b
