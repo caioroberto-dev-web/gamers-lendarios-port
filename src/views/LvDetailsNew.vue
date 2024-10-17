@@ -123,5 +123,8 @@ img {
   margin: 0 auto;
 }
 
+a {
+  color: #007bff;
+}
 
 </style>
