@@ -67,8 +67,7 @@ onMounted(async () => {
           <img
             :src="noticia.image"
             class="img-carousel img-fluid d-block m-auto"
-            :alt="noticia.titulo"
-            role="presentation"
+            :alt="`Imagem de carousel de ` + detailsNew.titulo"
           />
           <div class="carousel-caption d-none d-md-block p-4">
             <h5>{{ noticia.titulo }}</h5>
