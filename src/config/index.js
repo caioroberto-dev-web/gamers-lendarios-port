@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const http = axios.create({
-  baseURL: "https://apibloggames.onrender.com",
+  baseURL: "https://apigames.glitch.me",
 });
 
 export default http;
