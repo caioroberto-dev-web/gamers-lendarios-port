@@ -13,6 +13,7 @@ defineProps({
   properties2: String,
   properties3: String,
   properties4: String,
+  properties5: String,
   image: String,
   toUrl: String,
   commentCount: Number,
@@ -27,7 +28,7 @@ defineProps({
         >Postado por <strong>{{ list[properties2] }}</strong> em
         {{ dateFormated(new Date(list[properties3])) }}</small
       >
-      <lv-image class="col-lg-6 col-12" :src="list[image]"></lv-image>
+      <lv-image class="col-lg-6 col-12" :src="list[image]" :alt="list[properties5]"></lv-image>
       <p
         class="col-lg-6 col-12 text-truncate-custom"
         v-html="list[properties4]"
