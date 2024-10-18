@@ -82,7 +82,7 @@ const mediaReviewUsersFunction = async () => {
     </div>
     <div v-else>
       <h2 class="pt-5">{{ detailsNew.titulo }}</h2>
-      <img class="img-fluid" :src="detailsNew.image" :alt="detailsNew.titulo" />
+      <img class="img-fluid" :src="detailsNew.image" :alt="`Imagem de carousel de ` + detailsNew.titulo" />
       <p class="text-center">
         Postado por: <strong>{{ detailsNew.autor }}</strong> em
         {{ dateFormated(detailsNew.createdAt) }} - atualizado em
