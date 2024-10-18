@@ -6,7 +6,7 @@ defineProps({
 </script>
 <template>
   <div class="container-img">
-    <img class="img-fluid" :src="src" :alt="alt" />
+    <img class="img-fluid" :src="src" :alt="alt" role="presentation" />
   </div>
 </template>
 
