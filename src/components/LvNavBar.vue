@@ -78,6 +78,7 @@ const logout = () => {
                   class="img-profile"
                   :src="userStore.user.image"
                   :alt="userStore.user.nome"
+                  role="presentation"
                 />
                 {{ userStore.user.nome_de_usuario }}</router-link
               >
