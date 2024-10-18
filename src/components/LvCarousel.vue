@@ -103,7 +103,7 @@ onMounted(async () => {
 
 .img-carousel {
   max-height: 500px;
-  min-height: 350px;
+  min-height: 450px;
   border-radius: 15px;
   border: 0.1px solid transparent;
   transition: all ease-in-out 0.3s;
