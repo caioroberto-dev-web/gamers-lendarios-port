@@ -40,6 +40,7 @@ onMounted(async () => {
       :properties2="'autor'"
       :properties3="'createdAt'"
       :properties4="'descricao'"
+      :properties5="'titulo'"
       :image="'image'"
       :toUrl="'/details-new'"
       :id="'idNoticia'"
