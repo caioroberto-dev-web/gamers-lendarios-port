@@ -29,4 +29,16 @@ export const userServices = {
       },
     });
   },
+
+  async verifyRegistration(data) {
+    return http.post("/recuperasenha", data);
+  },
+
+  async changePassword(data, token) {
+    return http.patch("/novasenha", data, {
+      headers: {
+        Authorization: "Bearer " + token,
+      },
+    });
+  },
 };
