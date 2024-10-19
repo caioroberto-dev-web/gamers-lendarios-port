@@ -45,6 +45,16 @@ const routes = [
     component: () => import("../views/LvRegister.vue"),
   },
   {
+    path: "/secret-word",
+    name: "lv-secret-word",
+    component: () => import("../views/LvSecretWord.vue"),
+  },
+  {
+    path: "/recover-password",
+    name: "lv-recover-password",
+    component: () => import("../views/LvRecoverPassword.vue"),
+  },
+  {
     path: "/login",
     name: "lv-login",
     component: () => import("../views/LvLogin.vue"),
