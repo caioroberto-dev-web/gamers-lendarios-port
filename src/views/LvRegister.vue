@@ -43,7 +43,6 @@ const handleSubmit = async (field) => {
     .catch((err) => {
       loading.value = "Register";
       toast.error(err.response.data.message);
-      console.log(err);
     });
 };
 </script>
@@ -133,6 +132,9 @@ const handleSubmit = async (field) => {
         <div class="col-12">
           <lv-button class="m-0" :loading="loading"></lv-button>
         </div>
+        <p class="text-center">
+          Já possui conta? <router-link to="/login">Clique aqui!</router-link>
+        </p>
       </div>
     </FormKit>
   </div>
