@@ -66,8 +66,10 @@ const handleSubmit = async (field) => {
               label="Senha"
               validation="required"
             />
+            <small><router-link to="/secret-word">Esqueceu a senha?</router-link></small>
           </div>
           <lv-button class="btn-login" :loading="loading" />
+          <p class="text-center">Não possui conta? <router-link to="/register">Clique aqui!</router-link></p>
         </div>
       </div>
     </FormKit>
