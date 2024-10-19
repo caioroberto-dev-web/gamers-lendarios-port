@@ -25,14 +25,14 @@ const handleSubmit = async (field) => {
 
   await userServices
     .verifyRegistration(field)
-    .then((res) => {
-      userStore.verifyRegistration(field);
+    .then(async (res) => {
+      await userStore.verifyRegistration(field);
       toast.success(res.data.message);
       router.push("/recover-password");
     })
-    .catch((e) => {
+    .catch((err) => {
       loading.value = "Verificar";
-      toast.error(e.response.data.message);
+      toast.error(err.response.data.message);
     });
 };
 </script>
