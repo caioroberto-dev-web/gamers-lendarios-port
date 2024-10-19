@@ -25,7 +25,7 @@ export const useUserStore = defineStore("user", {
       await userServices.verifyRegistration(data).then((res) => {
         this.user = res.data;
       });
-    }
+    },
     async logout() {
       this.user = {
         idUsuario: 0,
