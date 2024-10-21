@@ -30,9 +30,6 @@ const handleSubmit = async (field) => {
   delete field.password;
   delete field.password_confirm;
 
-  formData.append("senha", field.password);
-  formData.append("confirmaSenha", field.password_confirm);
-  
   for (const [key, value] of Object.entries(field)) {
     if (key !== "image") {
       formData.append(key, value);
