@@ -40,11 +40,15 @@ const editUser = async () => {
 
   formData.append("image", user.value.image[0].file);
 
-  formData.append("senha", user.value.password);
-  formData.append("confirmaSenha", user.value.password_confirm);
+  user.value.senha = user.value.password
+  user.value.confirmaSenha = user.value.password_confirm
 
+  formData.append("senha", user.value.senha);
+  formData.append("confirmaSenha", user.value.confirmaSenha);
+  
+  console.log(user.value);
   for (const [key, value] of Object.entries(user.value)) {
-    if (key !== "image" || "password" || "password_confirm") {
+    if (key !== "image") {
       formData.append(key, value);
     }
   }
