@@ -24,12 +24,17 @@ const handleSubmit = async (field) => {
 
   formData.append("image", field.image[0].file);
 
+  field.senha = field.password;
+  field.confirmaSenha = field.password_confirm;
+
+  delete field.password;
+  delete field.password_confirm;
+
   formData.append("senha", field.password);
   formData.append("confirmaSenha", field.password_confirm);
-
-  console.log(field);
+  
   for (const [key, value] of Object.entries(field)) {
-    if (key !== "image" || "password" || "password_confirm") {
+    if (key !== "image") {
       formData.append(key, value);
     }
   }
